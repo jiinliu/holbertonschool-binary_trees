@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
-	* find_depth - Finds the depth (number of edges) in the leftmost branch.
+	* find_depth - function
 	* @node: Pointer to the root node of the tree.
 	*
 	* Return: Depth of the leftmost leaf.
@@ -26,7 +26,8 @@ static int find_depth(const binary_tree_t *node)
 	*
 	* Return: 1 if the subtree is perfect, 0 otherwise.
 	*/
-static int perfect_helper(const binary_tree_t *tree, int level, int expected_depth)
+static int perfect_helper(const binary_tree_t *tree, int level,
+				int expected_depth)
 {
 	if (tree->left == NULL && tree->right == NULL)
 		return (level == expected_depth);
